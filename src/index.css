@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.close-button {
+  @apply px-2 py-1 rounded-md border-[1px] border-white bg-black text-white  hover:bg-white hover:text-black hover:border-[1px] hover:border-black text-2xl hover:ease-in-out hover:duration-150;
+}
+
+.submit-button {
+  @apply px-2 py-1 rounded-md border-[1px] border-black text-black hover:bg-black hover:text-white text-2xl hover:ease-in-out hover:duration-150; 
+}
+
+.delete-button {
+  @apply px-2 py-1 rounded-md border-[1px] border-black bg-red-400 text-white text-2xl hover:ease-in-out hover:duration-150; 
+}
+
+.underline-button {
+  @apply border-b-2 border-transparent hover:border-b-2 hover:border-blue-500
+}
+
+.input-field {
+  @apply border-b-2 bg-gray-100 border-black font-light focus:border-orange-500 ;
+}
+.module-input-field {
+  @apply border-b-[1px] border-black font-light focus:border-orange-500 ;
+}
